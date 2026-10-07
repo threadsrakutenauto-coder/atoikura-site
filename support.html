@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>あといくら？ サポート</title>
+    <style>
+      :root {
+        --bg: #f2f7fa;
+        --card: #ffffff;
+        --text: #0f172a;
+        --sub: #566173;
+        --accent: #0e7490;
+        --line: #d8e4ea;
+        --note-bg: #fff7e6;
+        --note-line: #b45309;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0d12;
+          --card: #171b24;
+          --text: #f5f7fa;
+          --sub: #9aa3b2;
+          --accent: #22d3ee;
+          --line: #2a3141;
+          --note-bg: #2a2110;
+          --note-line: #fbbf24;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+          'Noto Sans JP', sans-serif;
+        line-height: 1.8;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 32px 16px 56px;
+      }
+      header {
+        margin-bottom: 24px;
+      }
+      .brand {
+        margin: 0;
+        color: var(--accent);
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+      h1 {
+        margin: 4px 0 8px;
+        font-size: 26px;
+        line-height: 1.4;
+      }
+      h2 {
+        margin: 28px 0 10px;
+        font-size: 19px;
+      }
+      section.card,
+      details {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        margin: 12px 0;
+      }
+      section.card {
+        padding: 18px 20px;
+      }
+      details {
+        padding: 0 20px;
+      }
+      summary {
+        cursor: pointer;
+        padding: 16px 0;
+        font-weight: 800;
+        list-style-position: outside;
+      }
+      details[open] summary {
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 8px;
+      }
+      details > div {
+        padding-bottom: 14px;
+      }
+      p,
+      ul,
+      ol {
+        margin: 8px 0;
+      }
+      ul,
+      ol {
+        padding-left: 1.4em;
+      }
+      li + li {
+        margin-top: 4px;
+      }
+      .formula {
+        background: var(--bg);
+        border-radius: 10px;
+        padding: 10px 12px;
+        font-weight: 700;
+      }
+      .contact {
+        background: var(--note-bg);
+        border: 2px solid var(--note-line);
+      }
+      .contact strong {
+        font-size: 17px;
+      }
+      nav {
+        margin-top: 28px;
+        font-size: 14px;
+      }
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="brand">あといくら？</p>
+        <h1>あといくら？ サポート</h1>
+      </header>
+
+      <section class="card">
+        <p>
+          「あといくら？」は、給料日までに<strong>今日あといくら使えるか</strong>をひと目で表示する家計アプリです。月の収入・固定費・貯金予定額と給料日を入れると、毎日使える金額を計算します。支出を記録すると、今日の金額と今期の残りがすぐに更新されます。
+        </p>
+        <p>アカウント登録は不要で、入力した情報はお使いの iPhone の中だけに保存されます。</p>
+      </section>
+
+      <section class="card contact" aria-label="お問い合わせ先">
+        <p>
+          お問い合わせ先：<strong
+            ><a href="mailto:atoikura777@gmail.com">atoikura777@gmail.com</a></strong
+          >
+        </p>
+        <p>
+          お問い合わせの際は、iPhone の機種、iOS
+          のバージョン、起きたことをお知らせいただけるとスムーズです。
+        </p>
+      </section>
+
+      <h2>よくある質問</h2>
+
+      <details>
+        <summary>今日使える金額はどう決まりますか？</summary>
+        <div>
+          <p>まず、今期（給料日から次の給料日の前日まで）の自由予算を決めます。</p>
+          <p class="formula">自由予算 ＝ 月の収入 − 固定費 − 貯金予定額</p>
+          <p>
+            「今日使ってOK」の金額は、自由予算から昨日までの支出と明日以降の日付の支出を引いた残りを、給料日までの日数（今日を含む）で割り、そこから今日の支出を引いたものです。
+          </p>
+          <ul>
+            <li>使わなかった分は、翌日以降の金額に自然に回ります。</li>
+            <li>
+              ホームの「今期の残り」から「予算を変更」を開くと、今期の自由予算を手動で決められます。「自動計算に戻す」で元の計算に戻せます。
+            </li>
+            <li>
+              収入・固定費・貯金予定額・給料日は「設定」で変更できます。給料日が土日のときに前の金曜にする設定もあります。
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>支出を追加・編集・削除するには？</summary>
+        <div>
+          <ul>
+            <li>
+              追加：ホームまたは履歴の「＋
+              支出」ボタンから「手入力」または「レシートから追加」を選びます。
+            </li>
+            <li>編集：履歴で支出をタップすると、金額・カテゴリ・メモ・日付を変更できます。</li>
+            <li>削除：履歴で支出を左にスワイプするか、編集画面の「削除」を押します。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>レシート読み取りについて</summary>
+        <div>
+          <ul>
+            <li>
+              「＋
+              支出」→「レシートから追加」で、レシートを撮影するか、写真から選ぶと、合計金額と日付を読み取って入力欄に入れます。
+            </li>
+            <li>保存する前に、金額と日付を確認・修正できます。</li>
+            <li>読み取れなかった場合は、そのまま手入力で追加できます。</li>
+            <li>
+              読み取りは iPhone
+              の中で行われ、画像は外部へ送信されません。レシート画像はアプリに保存されません。
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>カメラや写真の許可をしなかった場合は？</summary>
+        <div>
+          <ul>
+            <li>
+              カメラを許可しなくても、「写真から選ぶ」と「手入力」は使えます。写真は選んだ1枚だけが渡されるため、写真ライブラリへのアクセス許可は必要ありません。
+            </li>
+            <li>
+              あとからカメラを使いたい場合は、レシート画面の「設定を開く」、または iPhone
+              の「設定」→「あといくら？」→「カメラ」をオンにしてください。
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>ウィジェットについて</summary>
+        <div>
+          <ul>
+            <li>
+              ホーム画面を長押しして左上の「＋」（または「編集」→「ウィジェットを追加」）から「あといくら？」を選ぶと、小・中サイズのウィジェットを追加できます。
+            </li>
+            <li>
+              今日使える金額、今期の残り、給料日までの日数を表示します。タップするとアプリが開きます。
+            </li>
+            <li>
+              支出を記録したときやアプリを開いたときに更新されます。iOS
+              の都合で、反映まで少し時間がかかることがあります。
+            </li>
+            <li>アプリのテーマ・文字サイズ・ホームスキンに合わせた見た目になります。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>ホームスキンについて</summary>
+        <div>
+          <ul>
+            <li>
+              予算内で期間を終える（予算内達成）とランクが上がり、ランクに応じてホーム画面のデザイン（ホームスキン）が解放されます。
+            </li>
+            <li>
+              Gold スキン（予算内達成3回）、Sapphire スキン（9回）、Master
+              スキン（12回）があります。Standard は最初から使えます。
+            </li>
+            <li>
+              ホームの「実績を見る」→「ホームスキン」で選べます。ライト /
+              ダークの設定とは別に選べます。
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>データはどこに保存されますか？</summary>
+        <div>
+          <p>
+            入力した情報は、すべてお使いの iPhone
+            の中に保存されます。開発者や外部のサーバーへ送信されることはありません。詳しくは<a
+              href="privacy.html"
+              >プライバシーポリシー</a
+            >をご覧ください。
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>機種変更のとき、データは引き継げますか？</summary>
+        <div>
+          <ul>
+            <li>本アプリには、アカウント、クラウド同期、データの書き出しの機能はありません。</li>
+            <li>
+              iPhone のバックアップから新しい iPhone
+              へ復元・移行した場合に、データが引き継がれることがありますが、引き継ぎを保証するものではありません。
+            </li>
+            <li>アプリを削除すると、アプリ内のデータも削除されます。ご注意ください。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>アプリが正常に開かない場合は？</summary>
+        <div>
+          <ol>
+            <li>画面に「もう一度試す」などのボタンが表示されている場合は、押してみてください。</li>
+            <li>アプリを一度終了して、もう一度開いてください。</li>
+            <li>iPhone を再起動し、App Store で最新版になっているか確認してください。</li>
+            <li>iPhone の空き容量が少ない場合は、空きを作ってから開いてください。</li>
+            <li>
+              それでも解決しない場合は、iPhone の機種、iOS
+              のバージョン、起きたことを添えて、お問い合わせください。
+            </li>
+          </ol>
+          <p>
+            アプリを削除すると、保存されていたデータも削除されます。削除して入れ直す前に、まずお問い合わせください。
+          </p>
+        </div>
+      </details>
+
+      <nav><a href="privacy.html">プライバシーポリシー</a></nav>
+    </main>
+  </body>
+</html>

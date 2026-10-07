@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>あといくら？</title>
+    <style>
+      :root {
+        --bg: #f2f7fa;
+        --card: #ffffff;
+        --text: #0f172a;
+        --sub: #566173;
+        --accent: #0e7490;
+        --line: #d8e4ea;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0d12;
+          --card: #171b24;
+          --text: #f5f7fa;
+          --sub: #9aa3b2;
+          --accent: #22d3ee;
+          --line: #2a3141;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+          'Noto Sans JP', sans-serif;
+        line-height: 1.8;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 16px 56px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 30px;
+        line-height: 1.4;
+      }
+      .lead {
+        margin: 0 0 20px;
+        color: var(--sub);
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        margin: 14px 0;
+      }
+      p {
+        margin: 8px 0;
+      }
+      .links {
+        display: grid;
+        gap: 12px;
+        margin: 18px 0;
+      }
+      .links a {
+        display: block;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 16px 20px;
+        color: var(--text);
+        font-weight: 800;
+        text-decoration: none;
+      }
+      .links a::after {
+        content: '›';
+        float: right;
+        color: var(--sub);
+      }
+      a {
+        color: var(--accent);
+      }
+      .contact {
+        color: var(--sub);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>あといくら？</h1>
+      <p class="lead">給料日まで、今日あといくら使えるかがひと目で分かる家計アプリ</p>
+
+      <section>
+        <p>
+          月の収入・固定費・貯金予定額と給料日を入れると、毎日使える金額を計算します。支出を記録すると、今日の金額と今期の残りがすぐに更新されます。
+        </p>
+        <p>アカウント登録は不要で、入力した情報はお使いの iPhone の中だけに保存されます。</p>
+      </section>
+
+      <nav class="links" aria-label="ページ">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="support.html">サポート</a>
+      </nav>
+
+      <p class="contact">
+        お問い合わせ：<a href="mailto:atoikura777@gmail.com">atoikura777@gmail.com</a>
+      </p>
+    </main>
+  </body>
+</html>
